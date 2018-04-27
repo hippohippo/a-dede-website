@@ -1,0 +1,45 @@
+<?php
+$z[0]=Array("global","",101,128);
+$z[0][4]=array();
+$z[0][4]['name']="cfg_indexurl";
+$z[1]=Array("global","",153,183);
+$z[1][4]=array();
+$z[1][4]['name']="cfg_companyname";
+$z[2]=Array("global","",185,215);
+$z[2][4]=array();
+$z[2][4]['name']="cfg_companyname";
+$z[3]=Array("global","",335,367);
+$z[3][4]=array();
+$z[3][4]['name']="cfg_templets_skin";
+$z[4]=Array("global","",389,416);
+$z[4][4]=array();
+$z[4][4]['name']="cfg_indexurl";
+$z[5]=Array("global","",585,612);
+$z[5][4]=array();
+$z[5][4]['name']="cfg_indexurl";
+$z[6]=Array("channel","<li><a href='[field:typelink/]'>[field:typename/]</a> </li>",653,752);
+$z[6][4]=array();
+$z[6][4]['type']="top";
+$z[7]=Array("global","",1277,1309);
+$z[7][4]=array();
+$z[7][4]['name']="cfg_templets_skin";
+$z[8]=Array("global","",1587,1619);
+$z[8][4]=array();
+$z[8][4]['name']="cfg_templets_skin";
+$z[9]=Array("global","",1897,1929);
+$z[9][4]=array();
+$z[9][4]['name']="cfg_templets_skin";
+$z[10]=Array("global","",2207,2239);
+$z[10][4]=array();
+$z[10][4]['name']="cfg_templets_skin";
+$z[11]=Array("type","[field:typename /]",3036,3089);
+$z[11][4]=array();
+$z[11][4]['typeid']="18";
+$z[12]=Array("arclist","\r\n<li><a href='[field:arcurl/]' target=\"_blank\">[field:title/]</a></li>\r\n",3195,3344);
+$z[12][4]=array();
+$z[12][4]['typeid']="18";
+$z[12][4]['row']="8";
+$z[12][4]['titlelen']="20";
+$z[12][4]['orderby']="pubdate";
+
+?>

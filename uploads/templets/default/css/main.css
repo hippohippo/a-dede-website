@@ -1,0 +1,55 @@
+
+.index_bg01 {
+	BACKGROUND: url(../images/banner_bg01.jpg) center no-repeat;
+}
+.index_bg02 {
+	BACKGROUND: url(../images/banner_bg02.jpg) center no-repeat;
+}
+.index_bg03 {
+	BACKGROUND: url(../images/banner_bg03.jpg) center no-repeat;
+}
+.index_bg04 {
+	BACKGROUND: url(../images/banner_bg04.jpg) center no-repeat;
+}
+.index_bg05 {
+	BACKGROUND: url(../images/banner_bg01.jpg) center no-repeat;
+}
+#warp {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; HEIGHT: 357px;; PADDING-TOP: 0px;
+}
+.banner {
+	Z-INDEX: 99; MARGIN: 0px auto; WIDTH: 971px; HEIGHT: 357px; _width: 973px
+}
+.banner_l {
+	MARGIN-TOP: 147px; WIDTH: 23px; FLOAT: left
+}
+.banner_r {
+	MARGIN-TOP: 147px; WIDTH: 23px; FLOAT: left
+}
+.bannerImg {
+	POSITION: relative; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 925px; PADDING-RIGHT: 0px; FLOAT: left; PADDING-TOP: 0px
+}
+.bannerImg .bannerPage {
+	POSITION: absolute; TOP: 300px; LEFT: 420px
+}
+.bannerImg .bannerPage A {
+	MARGIN-RIGHT: 2px
+}
+.bannerImg .bannerPage A IMG {
+	VERTICAL-ALIGN: middle
+}
+.slides_container {
+	POSITION: relative; WIDTH: 925px; OVERFLOW: hidden
+}
+.pagination {
+	MARGIN: 26px auto 0px
+}
+.pagination LI {
+	MARGIN: 0px 1px; FLOAT: left
+}
+.pagination LI A {
+	BACKGROUND-IMAGE: url(../images/pagination.png); WIDTH: 15px; DISPLAY: block; BACKGROUND-POSITION: 0px -1px; FLOAT: left; HEIGHT: 0px; OVERFLOW: hidden; PADDING-TOP: 12px
+}
+.pagination LI.current A {
+	BACKGROUND-POSITION: 0px -18px
+}

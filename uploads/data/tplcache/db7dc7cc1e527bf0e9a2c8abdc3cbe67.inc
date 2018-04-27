@@ -1,0 +1,1 @@
+<a  target="_blank" class="news_more" href="[field:typelink /]">>>查看更多</a>

@@ -1,0 +1,146 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+
+
+<LINK media=all href="{dede:global.cfg_templets_skin/}/css/css_style.css"  type="text/css" rel="stylesheet">
+
+<script type=text/javascript src="{dede:global.cfg_templets_skin/}/js/jquery-1.4.5.js"></script>
+
+<script src="{dede:global.cfg_templets_skin/}/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.foucs.js" type="text/javascript"></script>
+
+<SCRIPT language=javascript>function T(n){document.getElementById("ArticleCnt").style.fontSize=n+"px";}</SCRIPT>
+<!-- 解决IE6不缓存背景图片的问题-->
+<!--[if IE 6]>
+<script type="text/javascript">
+document.execCommand("BackgroundImageCache", false, true);
+</script>
+<![endif]-->
+
+
+
+</head>
+
+<body>
+	{dede:include filename="head.htm"/}
+	
+    
+    <div class="main">   
+        <div class="main_top"></div>
+        <div class="main_middle">
+        	<div class="product_list">
+            	<div class="top">{dede:type typeid='16'}[field:typename /]{/dede:type}</div>
+            	<div class="product_list_main">
+                	<ul>
+                    {dede:channelartlist typeid='16'}
+                    <li><a target="_blank" href='{dede:field name='typeurl'/}'>{dede:field name='typename'/}</a></li>
+                     {/dede:channelartlist}
+                    
+                    </ul>
+                
+                </div>
+            
+            </div>
+            
+            <div class="about">
+            	<div class="top">{dede:type typeid='12'}[field:typename /]{/dede:type}/<font>About</font></div>
+            	<div class="about_main">
+                	 <img src="{dede:global.cfg_templets_skin/}/image/jianjietu2.jpg" width="354" height="107" style="padding:2px; border:1px solid #CCC; margin-bottom:10px;" /><br />
+　　{dede:sql sql='Select content from dede_arctype where id=1'}[field:content function="cn_substr(Html2text(@me),620)"/]...{/dede:sql}   {dede:type typeid='1'}<a  target="_blank" class="news_more" href="[field:typelink /]">MORE ></a>{/dede:type}    
+                </div>
+            
+            </div>
+            
+            
+            
+            <div class="contactus">
+            	<div class="top">{dede:type typeid='13'}[field:typename /]{/dede:type} /<font>Contact</font></div>
+            	<div class="contactus_main">
+                	<strong>公司地址：</strong>{dede:global.cfg_address_t/}<br />
+					<strong>手　　机：</strong>{dede:global.cfg_mobile/}<br />
+                	<strong>电　　话：</strong>{dede:global.cfg_tel/}<br />
+					<strong>传　　真：</strong>{dede:global.cfg_fax/}<br />
+                	<strong>联 系 人：</strong>{dede:global.cfg_ContactPerson/}<br />
+					<strong>电子邮箱：</strong>{dede:global.cfg_email/}<br />
+					<strong>邮　　编：</strong>{dede:global.cfg_youbian/}<br />                
+                </div>
+            
+            </div>
+            
+            
+        	<div class="clearx"></div>
+        </div>
+        <div class="main_middle">
+        	<!-- <div class="product_topp" style="height:50px; padding-top:30px; text-align:right;"><span style="padding-right:90px; line-height:50px;"> {dede:type typeid='16'}<a  target="_blank" class="news_more" href="[field:typelink /]">>>查看更多</a>{/dede:type}   </span></div> -->
+            <div  class="product_main">
+
+                <div id=demo style="overflow:hidden;width:970px;" align=center>
+	<table border=0 align=center cellpadding=1 cellspacing=1 cellspace=0 >
+		<tr><td valign=top  id=marquePic1>
+	<table width='100%' border='0' cellspacing='0' background="image/pro_bg.jpg"><tr>
+    {dede:arclist typeid=16 row=20 titlelen=20 orderby='pubdate' }
+    <td align="center" > 
+    
+    <a target="_blank" href="[field:arcurl/]" title="[field:title/]"><img src="[field:litpic/]"  alt="[field:title/]"/ style=" margin:5px; width:120px; height:140px; padding:2px; border:1px solid #CCC; "></a><br /><a target="_blank" href="[field:arcurl/]" title="[field:title/]">[field:title/]</a> 
+
+               </td> {/dede:arclist}
+    </tr></table>
+		</td><td id=marquePic2 valign=top></td></tr>
+	</table></div>
+<script type="text/javascript">
+var speed=50 
+marquePic2.innerHTML=marquePic1.innerHTML 
+function Marquee(){ 
+if(demo.scrollLeft>=marquePic1.scrollWidth){ 
+demo.scrollLeft=0 
+}else{ 
+demo.scrollLeft++ 
+} 
+} 
+var MyMar=setInterval(Marquee,speed) 
+demo.onmouseover=function() {clearInterval(MyMar)} 
+demo.onmouseout=function() {MyMar=setInterval(Marquee,speed)} 
+</script>
+                
+                
+                
+                
+               
+            
+            <div class="clearx"></div>
+            </div>
+            
+        	<div class="clearx"></div>
+        </div>
+        <div class="main_bottom"></div>
+        
+        
+    	<div class="clearx"></div>
+    </div>
+    
+    <!-- <div class="gonggao">
+    	<ul>
+        <li>友情链接：</li>
+        {dede:flink  row='24'}
+            
+            
+            <li>
+            [field:link /]</li>
+           
+            {/dede:flink}
+        
+        	
+        </ul>
+    
+    </div> -->
+    
+    {dede:include filename="footer.htm"/}
+    
+</body>
+</html>
